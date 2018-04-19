@@ -1,9 +1,11 @@
 package Celda;
 
-public class Celda {
+public class Celda{
+    private String valorString;
     private String indetificador;
-    private int valor;
-    public Celda(String _identificador, int _valor){
+    private Object valor;
+
+    public Celda(String _identificador, Object _valor){
         this.indetificador=_identificador;
         this.valor=_valor;
     }
@@ -16,11 +18,11 @@ public class Celda {
         this.indetificador = indetificador;
     }
 
-    public int getValor() {
+    public Object getValor() {
         return valor;
     }
 
-    public void setValor(int valor) {
+    public void setValor(Object valor) {
         this.valor = valor;
     }
 }
